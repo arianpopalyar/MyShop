@@ -56,6 +56,22 @@
     <Compile Include="Migrations\201902202029508_AddBasket.Designer.cs">
       <DependentUpon>201902202029508_AddBasket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903041954129_AddCustomers.cs" />
+    <Compile Include="Migrations\201903041954129_AddCustomers.Designer.cs">
+      <DependentUpon>201903041954129_AddCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903042255165_AddCustomers1.cs" />
+    <Compile Include="Migrations\201903042255165_AddCustomers1.Designer.cs">
+      <DependentUpon>201903042255165_AddCustomers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903042354434_AddedOrders.cs" />
+    <Compile Include="Migrations\201903042354434_AddedOrders.Designer.cs">
+      <DependentUpon>201903042354434_AddedOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903071313427_AddCustomers2.cs" />
+    <Compile Include="Migrations\201903071313427_AddCustomers2.Designer.cs">
+      <DependentUpon>201903071313427_AddCustomers2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLRepository.cs" />
@@ -76,6 +92,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902202029508_AddBasket.resx">
       <DependentUpon>201902202029508_AddBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903041954129_AddCustomers.resx">
+      <DependentUpon>201903041954129_AddCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903042255165_AddCustomers1.resx">
+      <DependentUpon>201903042255165_AddCustomers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903042354434_AddedOrders.resx">
+      <DependentUpon>201903042354434_AddedOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903071313427_AddCustomers2.resx">
+      <DependentUpon>201903071313427_AddCustomers2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

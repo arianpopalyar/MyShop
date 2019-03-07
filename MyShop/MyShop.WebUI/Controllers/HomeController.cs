@@ -20,11 +20,12 @@ namespace MyShop.WebUI.Controllers
             productCategories = productCategoryContext;
         }
 
-        public ActionResult Index(string Category=null)
+        public ActionResult Index(string Category = null)
         {
             List<Product> products;
-            List<ProductCategory> categories =productCategories.Collection().ToList();
-            if(Category == null)
+            List<ProductCategory> categories = productCategories.Collection().ToList();
+
+            if (Category == null)
             {
                 products = context.Collection().ToList();
             }
@@ -32,21 +33,27 @@ namespace MyShop.WebUI.Controllers
             {
                 products = context.Collection().Where(p => p.Category == Category).ToList();
             }
+
             ProductListViewModel model = new ProductListViewModel();
             model.Products = products;
             model.ProductCategories = categories;
+
+
             return View(model);
         }
 
-        public ActionResult Details(string Id){
+        public ActionResult Details(string Id)
+        {
             Product product = context.Find(Id);
-            if(product == null)
+            if (product == null)
             {
                 return HttpNotFound();
-            }else{
-              return View(product);
             }
-        }                                  
+            else
+            {
+                return View(product);
+            }
+        }
 
         public ActionResult About()
         {
